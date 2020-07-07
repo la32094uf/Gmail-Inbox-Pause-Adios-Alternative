@@ -17,6 +17,8 @@ function inboxPause() {
 
 function createTimeDrivenTriggers() {
   
+  //I chose delivery of mails at 8 & 16. 
+  
     ScriptApp.newTrigger('inboxpause')
       .timeBased()
       .everyDays(1)
