@@ -12,9 +12,16 @@ function inboxPause() {
     if (typeof Gmail === 'undefined') {
       throw new Error("You have to enable the Service 'Gmail Api' on the left Services-pane. See: https://developers.google.com/apps-script/guides/services/advanced#new-editor");
     } else {
-      GmailApp.createLabel('inboxpause');
+
+
+      var labelnew = Gmail.newLabel()
+      labelnew.labelListVisibility = 'LABEL_HIDE';
+      labelnew.name = 'inboxpause'
+
+      Gmail.Users.Labels.create(labelnew, 'me');
+
       createFilter('*', 'inboxpause');
-      createTimeDrivenTriggers();
+      //createTimeDrivenTriggers();
     }
   }
   else {
