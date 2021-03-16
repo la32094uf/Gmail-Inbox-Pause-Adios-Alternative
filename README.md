@@ -1,5 +1,6 @@
 # gmail inbox pause adios alternative
-Since Adios.ai is nog working anymore I wanted to start an google-script alternative to pause your gmail inbox, to only receive mails based on time you choose.
+Since Adios.ai is not working anymore, I wanted to start an google-script alternative to pause your gmail inbox, to only receive mails based on time you choose.
+This inbox pause solution is also a free simple alternative to the pause & tame inbox functions of Boomerang and Mailman. 
 
 
 Useage: 
