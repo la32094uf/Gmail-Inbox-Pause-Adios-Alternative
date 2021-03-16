@@ -5,7 +5,7 @@ This inbox pause solution is also a free simple alternative to the pause & tame 
 
 Useage: 
 
- 1. Go to https://script.google.com, create a new project, and add the content of inboxpause.gs
+ 1. Go to https://script.google.com, create a new project, and add the content of [inboxpause.gs](https://github.com/la32094uf/Gmail-Inbox-Pause-Adios-Alternative/blob/master/inboxpause.gs)
  2. Go to the function createTimeDrivenTriggers. Tune the times when you want your emails to be delivered.
  3. Enable the Service 'Gmail Api' on the left Services-pane. See: https://developers.google.com/apps-script/guides/services/advanced#new-editor
  4. run the inboxPause function. Grant for the asked permissions.
