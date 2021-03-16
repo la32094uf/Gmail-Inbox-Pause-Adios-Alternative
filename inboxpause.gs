@@ -21,7 +21,7 @@ function inboxPause() {
       Gmail.Users.Labels.create(labelnew, 'me');
 
       createFilter('*', 'inboxpause');
-      //createTimeDrivenTriggers();
+      createTimeDrivenTriggers();
     }
   }
   else {
