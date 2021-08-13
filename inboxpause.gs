@@ -1,7 +1,8 @@
 //Guide:  
 // 1. Go to the function createTimeDrivenTriggers. Tune the times when you want your emails to be delivered.
-// 2. Enable the Service 'Gmail Api' on the left Services-pane. See: https://developers.google.com/apps-script/guides/services/advanced#new-editor"
-// 3. run the inboxPause function. Grant for the asked permissions.
+// 2. Change the "YOU@gmail.com" to your own gmail
+// 3. Enable the Service 'Gmail Api' on the left Services-pane. See: https://developers.google.com/apps-script/guides/services/advanced#new-editor"
+// 4. run the inboxPause function. Grant for the asked permissions.
 // 
 // At the given trigger-times, the inboxPause function will run. Emails with the label inboxpause will be returned into your mailbox.
 
@@ -20,7 +21,9 @@ function inboxPause() {
 
       Gmail.Users.Labels.create(labelnew, 'me');
 
-      createFilter('*', 'inboxpause');
+      // New Updated Filter:
+      createFilter('{(to:YOU@gmail.com) (deliveredto:YOU@gmail.com)}', 'inboxpause'); // TODO: UPDATE EMAIL |  
+
       createTimeDrivenTriggers();
     }
   }
